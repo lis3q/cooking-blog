@@ -1,0 +1,389 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Resetting default website settings */
+* { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; outline: none; border: none; }
+
+/* Variables */
+:root {
+    --white: #fff;
+    --primary: #FF9F3F;
+    --primaryHover: #ff8f20;
+    --lightOrange: #FFF7EF;
+    --black: #1b1b1b;
+    --scrollbar: #FFE4C9;
+    --primaryFont: 'Playfair Display', sans-serif;
+    --secondaryFont: 'Open Sans', sans-serif;
+}
+
+/* Main settings */
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    cursor: url('img/cursor.png'), auto;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--scrollbar);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+section {
+    padding: 20px 70px 60px 70px;
+}
+.section-heading {
+    color: var(--black);
+    margin-top: 50px;
+    font-family: var(--primaryFont);
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.container {
+    margin-top: 70px;
+}
+
+/* Home section */
+#home {
+    height: 100vh;
+    background: #ffefde;
+}
+#home header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#home header .logo img {
+    height: 100px;
+}
+#home header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#home header nav a {
+    color: var(--black);
+    font-size: 16px;
+    font-family: var(--secondaryFont);
+    transition: all .2s ease;
+}
+#home header nav a:hover {
+    color: var(--primary);
+}
+
+/* Hero */
+#home .hero {
+    display: flex;
+    justify-content: space-between;
+}
+#home .hero .content {
+    margin-top: 10%;
+    width: 40%;
+}
+#home .hero .content h1 {
+    color: var(--black);
+    font-family: var(--primaryFont);
+    font-size: 64px;
+    line-height: 120%;
+}
+#home .hero .content span {
+    color: var(--primary);
+    font-weight: 900;
+}
+#home .hero .content p {
+    margin: 20px 0 30px 0;
+    font-family: var(--secondaryFont);
+    color: var(--black);
+    font-size: 20px;
+}
+#home .hero .content .buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#home .hero .content .buttons a {
+    padding: 10px 30px;
+    background: var(--primary);
+    font-family: var(--secondaryFont);
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 17px;
+    border: 2px solid var(--primary);
+    transition: all .2s ease-in-out;
+    box-shadow: 0 4px 12px 0 #ff9f3f28;
+}
+#home .hero .content .buttons a:last-child {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+#home .hero .content .buttons a:hover {
+    border: 2px solid var(--primaryHover);
+    background: var(--primaryHover);
+}
+#home .hero .content .buttons a:last-child:hover {
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    color: var(--white);
+}
+#home .hero .circle {
+    height: 760px;
+    width: 760px;
+    background: url(img/texture.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+#home .hero .image {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    z-index: 1;
+    height: 820px;
+}
+#home .hero .image img {
+    height: 100%;
+    filter: drop-shadow(20px 20px 20px #3737371c);
+}
+
+
+/* Recipes section */
+#recipes {
+    background: var(--lightOrange);
+}
+#recipes .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+#recipes .recipe {
+    width: 400px;
+    font-family: var(--secondaryFont);
+}
+#recipes .recipe .image {
+    width: 100%;
+    height: 230px;
+}
+#recipes .recipe .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 4px 0 12px 0 #3737371f;
+}
+#recipes .recipe .preparation {
+    margin: 8px 0 16px 0;
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 500;
+}
+#recipes .recipe .recipe-name {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 6px;
+    line-height: 120%;
+}
+#recipes .recipe .recipe-desc {
+    font-size: 18px;
+    color: var(--black);
+    margin-bottom: 24px;
+}
+#recipes .recipe .btn {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* About section */
+#about {
+    background: var(--lightOrange);
+}
+#about .container {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+#about .content {
+    width: 42%;
+}
+#about .content h2 {
+    font-family: var(--primaryFont);
+    color: var(--black);
+    font-size: 38px;
+}
+#about .content p {
+    margin-top: 10px;
+    font-family: var(--secondaryFont);
+    color: var(--black);
+    font-size: 20px;
+    text-align: justify;
+    line-height: 160%;
+}
+#about .content .icons {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+#about .content .icons a {
+    color: var(--primary);
+    font-size: 22px;
+    transition: all .2s ease;
+}
+#about .content .icons a:hover {
+    color: var(--primaryHover);
+}
+#about .image {
+    height: 580px;
+}
+#about .image img {
+    height: 100%;
+    filter: drop-shadow(0 0 20px #3737373a);
+}
+
+/* Newsletter section */
+#newsletter {
+    padding: 40px 70px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(img/newsletter.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#newsletter h2 {
+    font-family: var(--secondaryFont);
+    color: var(--white);
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+#newsletter p {
+    font-family: var(--primaryFont);
+    color: var(--white);
+    font-size: 19px;
+}
+#newsletter .signup {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+#newsletter .signup input {
+    height: 46px;
+    width: 340px;
+    padding: 12px;
+    color: var(--black);
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+    font-family: var(--secondaryFont);
+}
+#newsletter .signup input[type="submit"] {
+    width: 140px;
+    cursor: pointer;
+    background: var(--primary);
+    border-radius: 0 5px 5px 0;
+    color: var(--white);
+    font-weight: 600;
+    transition: all .2s ease;
+}
+#newsletter .signup input[type="submit"]:hover {
+    background: var(--primaryHover);
+}
+
+/* Contact section */
+#contact {
+    background: var(--lightOrange);
+}
+#contact .form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+#contact .row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+#contact .form input, 
+#contact .form textarea {
+    border: 1px solid #e6dacd;
+    color: var(--black);
+    font-size: 17px;
+    height: 48px;
+    width: 240px;
+    border-radius: 5px;
+    padding: 16px;
+    background: transparent;
+    font-family: var(--secondaryFont);
+}
+#contact .form textarea {
+    resize: none;
+    height: 300px;
+    width: 496px;
+}
+#contact .form .submit-btn {
+    width: 496px;
+    border: none;
+    background: var(--primary);
+    color: var(--white);
+    font-weight: 600;
+    cursor: pointer;
+    height: 52px;
+    transition: all .2s ease;
+}
+#contact .form .submit-btn:hover {
+    background: var(--primaryHover);
+}
+
+/* Footer */
+.footer {
+    background: var(--black);
+    padding: 40px 70px 60px 70px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container .col h1 {
+    color: var(--white);
+    font-size: 34px;
+    font-family: var(--primaryFont);
+}
+.footer-container .col p {
+    margin-top: 6px;
+    color: var(--primary);
+    width: 70%;
+    font-size: 17px;
+    font-family: var(--primaryFont);
+}
+.footer-container .col {
+    display: flex;
+    flex-direction: column;
+}
+.footer-container h2 {
+    font-family: var(--secondaryFont);
+    color: var(--white);
+    font-size: 20px;
+}
+.footer-container a {
+    margin-top: 12px;
+    color: #6b6b6b;
+    font-family: var(--secondaryFont);
+    font-weight: 500;
+    transition: all .2s ease;
+}
+.footer-container a:hover {
+    color: var(--primary);
+}
