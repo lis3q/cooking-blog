@@ -1,0 +1,154 @@
+/* For phones */
+@media screen and (max-width: 768px) {
+
+    /* Main settings */
+    section {
+        padding: 20px 20px 60px 20px;
+    }
+    .section-heading {
+        font-size: 26px;
+    }
+
+    /* Home section */
+    #home {
+        height: 70vh;
+    }
+    #home header {
+        background: #ffe2be;
+        height: 66px;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        padding: 10px 20px;
+        width: 100%;
+    }
+    #home header .logo img {
+        height: 70px;
+    }
+    #home header nav {
+        display: none;
+        background: #ffead1;
+        position: absolute;
+        top: 66px;
+        left: 0;
+        width: 100%;
+        padding: 30px 20px;
+        flex-direction: column;
+        box-shadow: 0 4px 12px 0 #3737371f;
+    }
+    #home header nav.active {
+        display: flex;
+    }
+    #home header .hamburger {
+        display: inline-block;
+    }
+    /* Hero */
+    #home .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #home .hero .content {
+        margin-top: 40%;
+        width: 100%;
+    }
+    #home .hero .content h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    #home .hero .content p {
+        font-size: 18px;
+        text-align: center;
+    }
+    #home .hero .content .buttons  {
+        justify-content: center;
+    }
+    #home .hero .content .buttons a {
+        padding: 9px 24px;
+        font-size: 15px;
+    }
+    #home .hero .splash {
+        display: none;
+    }
+    #home .hero .image {
+        display: none;
+    }
+
+    /* Recipes section */
+    #recipes .recipe {
+        width: 100%;
+    }
+    #recipes .recipe .preparation {
+        font-size: 13px;
+    }
+    #recipes .recipe .recipe-name {
+        font-size: 24px;
+    }
+    #recipes .recipe .recipe-desc {
+        font-size: 17px;
+    }
+    #recipes .recipe .btn {
+        font-size: 15px;
+    }
+
+    /* About section */
+    #about .container {
+        flex-direction: column-reverse;
+    }
+    #about .content {
+        width: 100%;
+    }
+    #about .content h2 {
+        font-size: 36px;
+    }
+    #about .content p {
+        font-size: 18px;
+    }
+    #about .image {
+        display: none;
+    }
+
+    /* Newsletter section */
+    #newsletter {
+        padding: 40px 20px;
+    }
+    #newsletter h2 {
+        font-size: 38px;
+    }
+    #newsletter p {
+        font-size: 17px;
+    }
+    #newsletter .signup input {
+        height: 42px;
+        font-size: 14px;
+    }
+
+    /* Contact section */
+    #contact .row {
+        flex-direction: column;
+        width: 100%;
+    }
+    #contact .form input, 
+    #contact .form textarea {
+        width: 100%;
+    }
+    #contact .form .submit-btn {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 20px 60px 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+    }
+    .footer-container .col p {
+        width: 100%;
+    }
+
+}

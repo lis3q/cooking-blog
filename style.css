@@ -75,6 +75,9 @@ section {
 #home header nav a:hover {
     color: var(--primary);
 }
+#home header .hamburger {
+    display: none;
+}
 
 /* Hero */
 #home .hero {
@@ -132,9 +135,9 @@ section {
     border: 2px solid var(--primary);
     color: var(--white);
 }
-#home .hero .circle {
-    height: 760px;
-    width: 760px;
+#home .hero .splash {
+    height: 640px;
+    width: 640px;
     background: url(img/texture.png);
     background-size: cover;
     position: absolute;
@@ -147,7 +150,7 @@ section {
     bottom: 0;
     right: 50px;
     z-index: 1;
-    height: 820px;
+    height: 720px;
 }
 #home .hero .image img {
     height: 100%;
