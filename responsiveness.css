@@ -11,7 +11,7 @@
 
     /* Home section */
     #home {
-        height: 70vh;
+        height: max-content;
     }
     #home header {
         background: #ffe2be;
